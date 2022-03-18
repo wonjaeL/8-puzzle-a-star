@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>인공지능 2주차 과제</title>
+    <link rel="stylesheet" href="../lib/tree_maker-min.css">
+    <script type="text/javascript" src="../lib/tree_maker-min.js"></script>
+</head>
+<body>
+
+<div id="my_tree" style="max-width: 100%"></div>
+<script type="text/javascript">
+    ###HERE###
+
+    treeMaker(tree, {
+        id: 'my_tree', card_click: function (element) {
+            console.log(element);
+        },
+        treeParams: params,
+        'link_width': '4px',
+        'link_color': '#a8a8a8',
+    });
+</script>
+</body>
+</html>
