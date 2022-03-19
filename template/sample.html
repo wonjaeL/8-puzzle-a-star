@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="../lib/tree_maker-min.css">
     <script type="text/javascript" src="../lib/tree_maker-min.js"></script>
 </head>
-<body>
-
-<div id="my_tree" style="max-width: 100%"></div>
+<body id="body">
+<div id="my_tree" style="position:absolute;top:0;left:500"></div>
 <script type="text/javascript">
     ###HERE###
 
+    if (Object.keys(params).length > 50) {
+        document.getElementById("body").style.transform = "scale(0.3)";
+    }
     treeMaker(tree, {
-        id: 'my_tree', card_click: function (element) {
-            console.log(element);
-        },
+        id: 'my_tree',
         treeParams: params,
         'link_width': '4px',
         'link_color': '#a8a8a8',
